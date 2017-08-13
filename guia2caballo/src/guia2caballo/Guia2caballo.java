@@ -30,14 +30,8 @@ public class Guia2caballo {
         DibujaMatriClass matriz = new DibujaMatriClass();
         matriz.DibujaMatriClass(filaCaballo, colCaballo, filaFicha, colFicha);
        
-        int restafila = filaCaballo - filaFicha;
-        
-        if (restafila < filaFicha){
-           filaCaballo = filaCaballo + 2;
-           colCaballo  = colCaballo + 1;  
-           matriz.DibujaMatriClass(filaCaballo, colCaballo, filaFicha, colFicha);
-           
-        }
+        MovimientosNewClass movimiento = new MovimientosNewClass();
+        movimiento.MovimientosNewClass(filaCaballo, colCaballo, filaFicha, colFicha);
         
         
     }
