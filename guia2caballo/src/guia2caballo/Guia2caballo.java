@@ -4,6 +4,7 @@
  * and open the template in the editor.
  */
 package guia2caballo;
+import java.util.Scanner;
 
 /**
  *
@@ -15,7 +16,21 @@ public class Guia2caballo {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        
+        Scanner sc = new Scanner(System.in);  //crear un objeto Scanner
+        System.out.print("Introduzca valores entre 0 y 7 ");
+        System.out.print("Introduzca la fila del caballo: ");
+        int filaCaballo = sc.nextInt();
+        System.out.print("Introduzca la columna del caballo: ");
+        int colCaballo = sc.nextInt();
+        System.out.print("Introduzca la fila de la ficha: ");
+        int filaFicha = sc.nextInt();
+        System.out.print("Introduzca la columna de la ficha: ");
+        int colFicha = sc.nextInt();
+        
+        
+        
+        
     }
     
 }
