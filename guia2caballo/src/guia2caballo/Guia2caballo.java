@@ -27,7 +27,9 @@ public class Guia2caballo {
         int filaFicha = sc.nextInt();
         System.out.print("Introduzca la columna de la ficha: ");
         int colFicha = sc.nextInt();
-        
+        DibujaMatriClass matriz = new DibujaMatriClass();
+        matriz.DibujaMatriClass(filaCaballo, colCaballo, filaFicha, colFicha);
+       
         
         
         
