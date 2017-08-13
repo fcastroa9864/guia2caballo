@@ -16,6 +16,7 @@ public class DibujaMatriClass {
         cc = colca;
         ff = filfic;
         cf = colfic;
+        
     }
     
 }
