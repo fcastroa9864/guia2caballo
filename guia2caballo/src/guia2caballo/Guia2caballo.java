@@ -18,7 +18,7 @@ public class Guia2caballo {
     public static void main(String[] args) {
         
         Scanner sc = new Scanner(System.in);  //crear un objeto Scanner
-        System.out.print("Introduzca valores entre 0 y 7 ");
+        System.out.print("Introduzca valores entre 0 y 7 \n");
         System.out.print("Introduzca la fila del caballo: ");
         int filaCaballo = sc.nextInt();
         System.out.print("Introduzca la columna del caballo: ");
@@ -30,7 +30,14 @@ public class Guia2caballo {
         DibujaMatriClass matriz = new DibujaMatriClass();
         matriz.DibujaMatriClass(filaCaballo, colCaballo, filaFicha, colFicha);
        
+        int restafila = filaCaballo - filaFicha;
         
+        if (restafila < filaFicha){
+           filaCaballo = filaCaballo + 2;
+           colCaballo  = colCaballo + 1;  
+           matriz.DibujaMatriClass(filaCaballo, colCaballo, filaFicha, colFicha);
+           
+        }
         
         
     }

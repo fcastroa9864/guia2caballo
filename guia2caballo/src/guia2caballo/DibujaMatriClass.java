@@ -20,6 +20,7 @@ public class DibujaMatriClass {
         
         char matriz[][] = new char[8][8];
         
+        System.out.print("TABLERO \n");
         
           for (int xx=0; xx < matriz.length; xx++) {
              for (int yy=0; yy < matriz[xx].length; yy++) {
@@ -31,14 +32,14 @@ public class DibujaMatriClass {
           matriz[ff][cf] = 'f';
         // imprime la matriz
         for (int xx=0; xx < matriz.length; xx++) {
-            System.out.print("|");
+          //  System.out.print("|");
          for (int yy=0; yy < matriz[x].length; yy++) {
             System.out.print("|");
             System.out.print (matriz[xx][yy]);
             System.out.print("|");
          if (yy!=matriz[xx].length-1) System.out.print("\t");
         }
-            System.out.println("|");
+            System.out.println(" ");
         }
         
     }
