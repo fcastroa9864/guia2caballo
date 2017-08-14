@@ -24,7 +24,7 @@ public class DibujaMatriClass {
         
           for (int xx=0; xx < matriz.length; xx++) {
              for (int yy=0; yy < matriz[xx].length; yy++) {
-                matriz [xx][yy] = '*';
+                matriz [xx][yy] = '.';
         
             }
          }

@@ -12,11 +12,15 @@ import java.util.Scanner;
  */
 public class MovimientosNewClass {
     public void MovimientosNewClass (int fic, int colc, int filfi,int colfi){
-          int contador = 0;
+          
+        int contador = 0;
           int xcab = fic;
           int ycab = colc;
           int xfic = filfi;
           int yfic = colfi;
+          
+         // System.out.print(xcab);
+         // System.out.print(ycab);
         DibujaMatriClass matri = new DibujaMatriClass();
         if ((xcab -xfic ) == (ycab -yfic))  {
             xcab = xcab + 2;
@@ -28,10 +32,16 @@ public class MovimientosNewClass {
         if ((xcab -xfic ) < (ycab -yfic))  {
             xcab = xcab + 2;
             ycab = ycab + 1;
-            matri.DibujaMatriClass(xcab, ycab, xfic, yfic);
-            
-            
+            matri.DibujaMatriClass(xcab, ycab, xfic, yfic);  
         }
+        
+         if ((xcab -xfic ) > (ycab -yfic))  {
+            xcab = xcab - 2;
+            ycab = ycab + 1;
+            matri.DibujaMatriClass(xcab, ycab, xfic, yfic);  
+        }
+        //System.out.print(xcab);
+        //System.out.print(ycab);
           
           
     }
